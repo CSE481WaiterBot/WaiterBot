@@ -3,6 +3,9 @@
 import rospy
 import world as world_mod
 import random
+from randomwalker.srv import GetBounds
+from randomwalker.srv import GetBoundsResponse
+from randomwalker.srv import GetScore
 
 """
 ### Steps for this file
@@ -38,19 +41,19 @@ class MapServer(object):
         self._world = world
         # TODO: Create a rospy service called 'get_bounds'. Make _get_bounds the
         # handleroooo.
-        s = rospy.Service('get_bounds', _get_bounds)
+        rospy.Service('get_bounds', GetBounds, self._get_bounds)
         # TODO: Create a rospy service called 'get_score'. Make _get_score the
         # handler.
-        s2 = rospy.Service('get_score', _get_score)
+        rospy.Service('get_score', GetScore, self._get_score)
     def _get_score(self, request):
         # TODO: (Optional) Check that the location is in bounds, and raise a
         # rospy.ServiceException if not.
         # TODO: Return the score for the correct row and column.
-        return self._world.get_score(None, None)
+        return self._world.get_score(request.row, request.col)
 
     def _get_bounds(self, request):
         # TODO: Return a GetBoundsResponse with the size of the grid.
-        return None
+        return GetBoundsResponse(self._world.num_rows(), self._world.num_cols()) 
 
 def main():
     # TODO: Make this program into a ROS node called 'map_server' using init_node.
