@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "randomwalker")
+set(randomwalker_MAINTAINER "jstn <jstn@todo.todo>")
+set(randomwalker_DEPRECATED "")
+set(randomwalker_VERSION "0.0.0")
+set(randomwalker_BUILD_DEPENDS "rospy" "message_generation")
+set(randomwalker_RUN_DEPENDS "rospy" "message_runtime")
+set(randomwalker_BUILDTOOL_DEPENDS "catkin")
