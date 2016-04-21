@@ -1,0 +1,8 @@
+prefix=/home/cse/Documents/logoshi/catkin_ws/install
+
+Name: roomba
+Description: Description of roomba
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/cse/Documents/logoshi/catkin_ws/install/lib 
+Requires: 

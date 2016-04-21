@@ -309,6 +309,12 @@ randomwalker_BINARY_DIR:STATIC=/home/cse/Documents/logoshi/catkin_ws/build/rando
 //Value Computed by CMake
 randomwalker_SOURCE_DIR:STATIC=/home/cse/Documents/logoshi/catkin_ws/src/randomwalker
 
+//Value Computed by CMake
+roomba_BINARY_DIR:STATIC=/home/cse/Documents/logoshi/catkin_ws/build/roomba
+
+//Value Computed by CMake
+roomba_SOURCE_DIR:STATIC=/home/cse/Documents/logoshi/catkin_ws/src/roomba
+
 //The directory containing a CMake configuration file for roscpp_serialization.
 roscpp_serialization_DIR:PATH=/opt/ros/indigo/share/roscpp_serialization/cmake
 
@@ -426,7 +432,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

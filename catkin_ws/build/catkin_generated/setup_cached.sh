@@ -7,6 +7,12 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/cse/Documents/logoshi/catkin_ws/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/cse/Documents/logoshi/catkin_ws/devel/lib:/opt/ros/indigo/lib:/opt/ros/indigo/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages"
-export PKG_CONFIG_PATH="/home/cse/Documents/logoshi/catkin_ws/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/cse/Documents/logoshi/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
+export CMAKE_PREFIX_PATH="/home/cse/Documents/logoshi/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export CPATH="/home/cse/Documents/logoshi/catkin_ws/devel/include:$CPATH"
+export LD_LIBRARY_PATH="/home/cse/Documents/logoshi/catkin_ws/devel/lib:/home/cse/Documents/logoshi/catkin_ws/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/opt/ros/indigo/lib:/opt/ros/indigo/lib/python2.7/dist-packages"
+export PATH="/home/cse/Documents/logoshi/catkin_ws/devel/bin:$PATH"
+export PKG_CONFIG_PATH="/home/cse/Documents/logoshi/catkin_ws/devel/lib/pkgconfig:/home/cse/Documents/logoshi/catkin_ws/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/cse/Documents/logoshi/catkin_ws/build"
+export PYTHONPATH="/home/cse/Documents/logoshi/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/cse/Documents/logoshi/catkin_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/cse/Documents/logoshi/catkin_ws/src:$ROS_PACKAGE_PATH"
